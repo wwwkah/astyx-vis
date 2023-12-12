@@ -263,6 +263,12 @@ def plot_annotation(filename):
     return 0
 
 
+# ディレクトリのパスを指定
+custom_directory = r"C:\Users\NJP00044794\code_box2\astyx-vis\radar_dataset_astyx\dataset_astyx_hires2019"
+
+# 環境変数 'AOD_HOME' に設定
+os.environ['AOD_HOME'] = custom_directory
+
 root_dir = os.environ['AOD_HOME']
 groundtruth_data_dir = root_dir + 'groundtruth_obj3d/'
 calib_dir = root_dir + 'calibration/'

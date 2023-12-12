@@ -116,12 +116,14 @@ def plot_2D_animation():
     return 0
 
 
-root_dir = os.environ['AOD_HOME']
-truth_data_dir = root_dir + 'groundtruth_obj3d/'
-calib_dir = root_dir + 'calibration/'
-radar_data_dir = root_dir + 'radar_6455/'
-lidar_data_dir = root_dir + 'lidar_vlp16/'
-camera_data_dir = root_dir + 'camera_front/'
+
+root_dir = r"C:\Users\NJP00044794\code_box2\astyx-vis\radar_dataset_astyx\dataset_astyx_hires2019"
+truth_data_dir = os.path.join(root_dir, 'groundtruth_obj3d')
+calib_dir = os.path.join(root_dir, 'calibration')
+radar_data_dir = os.path.join(root_dir, 'radar_6455')
+lidar_data_dir = os.path.join(root_dir, 'lidar_vlp16')
+camera_data_dir = os.path.join(root_dir, 'camera_front')
+
 
 
 files = os.listdir(radar_data_dir)
